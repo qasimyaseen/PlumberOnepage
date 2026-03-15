@@ -1,7 +1,7 @@
 import { MapPin, Phone, Clock } from 'lucide-react';
 import Image from 'next/image';
 
-const logo = '/footer-logo.png';
+const logo = '/logofooter.png';
 
 export function Footer() {
   return (
