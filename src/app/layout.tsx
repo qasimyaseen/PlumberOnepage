@@ -21,11 +21,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Keighley Emergency Plumber | Fast Local Plumbing Service",
     description: " Burst pipe or blocked drain in Keighley? Our local plumbers respond fast with fixed pricing and same-day service. Get your free quote now.",
-    url: "emergencyplumbers247.uk",
+    url: "https://emergencyplumbers247.uk",
     siteName: "Keighley Emergency Plumber",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "/og-image.png",
         width: 1200,
         height: 630,
         alt: "Keighley Emergency Plumber",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Keighley Emergency Plumber | Fast Local Plumbing Service",
     description: " Burst pipe or blocked drain in Keighley? Our local plumbers respond fast with fixed pricing and same-day service. Get your free quote now.",
-    images: ["/og-image.jpg"],
+    images: ["/og-image.png"],
   },
   alternates: {
     canonical: "https://emergencyplumbers247.uk",

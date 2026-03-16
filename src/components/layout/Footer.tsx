@@ -18,11 +18,13 @@ export function Footer() {
 
             </p>
             <br />
-            <div className="space-y-2 text-sm text-gray-400">
+            <div className="space-y-2 text-sm text-gray-400 mb-6">
               <p>Fully licensed & insured plumbers</p>
               <p>Same-day plumbing service available</p>
-              <p>24/7 emergency plumbing support
-              </p>
+              <p>24/7 emergency plumbing support</p>
+            </div>
+            <div className="flex gap-4 items-center">
+              <Image src="/certificate/wras.jpeg" alt="WRAS Approved" width={80} height={40} className="rounded bg-white p-1" />
             </div>
           </div>
 
@@ -65,7 +67,7 @@ export function Footer() {
           <div>
             <h4 className="font-bold mb-4 text-lg">Need a fast plumber in Keighley?</h4>
             <p className="text-gray-400 mb-6 text-sm">
-              Our expert Keighley plumbers are available 24/7 for all your plumbing emergencies.
+              Our expert team at Keighley Plumbing Services is available 24/7 for all your plumbing emergencies.
             </p>
             <a
               href="#quote"
@@ -78,11 +80,12 @@ export function Footer() {
 
 
         </div>
+      </div>
 
-        <div className="border-t border-gray-800 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-gray-400">
-          <p>&copy; {new Date().getFullYear()} Gastech Plumbing & Heating. All rights reserved.</p>
+      <div className="max-w-7xl mx-auto px-4 border-t border-gray-800 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-gray-400">
+        <p> Keighley Plumbing & Heating Services is a trading name of All Home Repairs.  &copy; {new Date().getFullYear()} Gastech Plumbing & Heating 24/7. All rights reserved.</p>
 
-        </div>
+
       </div>
     </footer>
   );

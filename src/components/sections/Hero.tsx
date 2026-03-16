@@ -1,5 +1,6 @@
 import { Star, Shield, Clock, CheckCircle, Phone, AlertCircle, Flame } from 'lucide-react';
 import { ImageWithFallback } from '@/components/ui/ImageWithFallback';
+import Image from 'next/image';
 
 export function Hero({ children }: { children?: React.ReactNode }) {
   return (
@@ -72,10 +73,15 @@ export function Hero({ children }: { children?: React.ReactNode }) {
               </a>
             </div>
 
-            {/* Scarcity/Urgency */}
-            <div className="flex items-center gap-2 text-primary bg-white/10 backdrop-blur-sm px-4 py-3 rounded-lg">
-              <AlertCircle className="w-5 h-5" />
-              <span className="font-semibold">Trusted Local plumbing and Heating experts</span>
+            {/* Scarcity/Urgency & Accreditations */}
+            <div className="flex flex-col sm:flex-row items-center gap-6 text-primary bg-white/10 backdrop-blur-sm px-4 py-4 rounded-lg">
+              <div className="flex items-center gap-2">
+                <AlertCircle className="w-5 h-5 flex-shrink-0" />
+                <span className="font-semibold">Trusted Local plumber and gas engineers</span>
+              </div>
+              <div className="flex items-center gap-4 border-t sm:border-t-0 sm:border-l border-white/20 pt-4 sm:pt-0 sm:pl-6">
+                <Image src="/certificate/wras.jpeg" alt="WRAS Approved" width={80} height={40} className="h-8 w-auto rounded shadow-sm bg-white p-1" />
+              </div>
             </div>
           </div>
 

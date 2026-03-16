@@ -3,7 +3,7 @@ export default function Schema() {
     "@context": "https://schema.org",
     "@type": "Plumber",
     "name": "Gastech Plumbing & Heating",
-    "alternateName": "Gastech Plumbing",
+    "alternateName": "All Home Repairs 24/7",
     "url": "https://gastechplumbing.co.uk",
     "logo": "https://gastechplumbing.co.uk/logo.png",
     "image": "https://images.unsplash.com/photo-1754620906571-9ba64bd3ffb4",
