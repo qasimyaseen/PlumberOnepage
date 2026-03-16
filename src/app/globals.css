@@ -2,8 +2,8 @@
 
 @theme {
   --font-sans: var(--font-inter);
-  --color-primary: #f06500;
-  --color-primary-hover: #d45900;
+  --color-primary: #435CFF;
+  --color-primary-hover: #3549E0;
   --color-secondary: #0D253F;
   --color-accent: #facc15;
   /* yellow-400 */

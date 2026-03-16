@@ -89,7 +89,7 @@ export function Gallery() {
               <div className="space-y-3">
                 <p className="text-sm font-bold text-primary uppercase tracking-widest">Premium Projects</p>
                 <h3 className="text-3xl lg:text-4xl font-black text-gray-900 leading-[1.1]">
-                  Complete Residential Plumbing & Gas Makeover
+                  Complete Residential Plumbing & Gas heating repairs
                 </h3>
                 <p className="text-lg text-gray-600 leading-relaxed max-w-lg">
                   A full residential plumbing upgrade including new pipework, efficient hot water systems, and modern fixtures designed for long-term reliability.
@@ -99,7 +99,7 @@ export function Gallery() {
                 <a href="#quote" className="bg-primary hover:bg-primary-hover text-white px-4 py-4 rounded-xl font-bold text-lg shadow-lg">
                   Book Your FREE Quote
                 </a>
-                <a href="tel:1300205205" className="flex items-center gap-2 text-gray-900 font-bold text-lg hover:gap-3 transition-all underline decoration-2 decoration-primary underline-offset-4">
+                <a href="tel:07598088229" className="flex items-center gap-2 text-gray-900 font-bold text-lg hover:gap-3 transition-all underline decoration-2 decoration-primary underline-offset-4">
                   Call Now for Fast Plumbing<ChevronRight className="w-5 h-5" />
                 </a>
               </div>

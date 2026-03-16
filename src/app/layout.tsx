@@ -8,7 +8,7 @@ const inter = Inter({
 });
 
 export const viewport: Viewport = {
-  themeColor: "#f06500",
+  themeColor: "#435CFF",
   width: "device-width",
   initialScale: 1,
 };
@@ -56,7 +56,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={inter.variable}>
-      <body className="font-sans antialiased selection:bg-[#f06500]/30">{children}</body>
+      <body className="font-sans antialiased selection:bg-[#435CFF]/30">{children}</body>
     </html>
   );
 }

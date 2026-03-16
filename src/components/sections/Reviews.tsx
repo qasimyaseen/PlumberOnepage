@@ -54,6 +54,8 @@ const reviews = [
   }
 ];
 
+const REVIEWS_URL = "https://www.google.com/maps/place/GASTECH+24%2F7+PLUMBING+%26+HEATING+SERVICES/@53.8779389,-1.8778056,17z/data=!4m8!3m7!1s0x487befdd6ce9c6f9:0x59771ace26e125f9!8m2!3d53.8779358!4d-1.8752307!9m1!1b1!16s%2Fg%2F11ry0x5dj_?entry=ttu";
+
 export function Reviews() {
   const [showAll, setShowAll] = useState(false);
   const visibleReviews = showAll ? reviews : reviews.slice(0, 3);
@@ -65,18 +67,25 @@ export function Reviews() {
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
             Real Reviews From Real Plumbing Customers
           </h2>
-          <div className="flex items-center justify-center gap-2 mb-4">
+          <a 
+            href={REVIEWS_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center gap-2 mb-4 hover:opacity-80 transition group"
+          >
             <div className="flex gap-1">
               {[...Array(5)].map((_, i) => (
                 <Star key={i} className="w-6 h-6 fill-accent text-accent" />
               ))}
             </div>
             <span className="text-2xl font-bold text-gray-900">4.9/5</span>
-            <span className="text-gray-600">from 184+ Google reviews</span>
-          </div>
+            <span className="text-gray-600 border-b border-dotted border-gray-400 group-hover:text-primary group-hover:border-primary transition">
+              from 184+ Google reviews
+            </span>
+          </a>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 mb-8">
+        <div className="grid md:grid-cols-3 gap-8 mb-12">
           {visibleReviews.map((testimonial, index) => (
             <div key={index} className="bg-gray-50 p-6 rounded-xl shadow-md border border-gray-200">
               <div className="flex items-start gap-3 mb-4">
@@ -85,7 +94,7 @@ export function Reviews() {
                 </div>
                 <div className="flex-1 min-w-0">
                   <div className="font-bold text-gray-900">{testimonial.name}</div>
-                  <div className="text-sm text-primary font-semibold">Verified Customer</div>
+                  <div className="text-sm text-primary font-semibold text-nowrap">Verified Customer</div>
                   <div className="text-xs text-gray-500">{testimonial.time}</div>
                 </div>
                 <div className="flex-shrink-0">
@@ -107,24 +116,38 @@ export function Reviews() {
           ))}
         </div>
 
-        <div className="text-center">
-          {showAll ? (
-            <button
-              onClick={() => setShowAll(false)}
-              className="inline-flex items-center gap-2 text-primary hover:text-primary-hover font-bold text-lg transition cursor-pointer"
-            >
-              Read less reviews
-              <span className="text-xl">↑</span>
-            </button>
-          ) : (
-            <button
-              onClick={() => setShowAll(true)}
-              className="inline-flex items-center gap-2 text-primary hover:text-primary-hover font-bold text-lg transition cursor-pointer"
-            >
-              Read 184+ reviews
-              <span className="text-xl">↓</span>
-            </button>
-          )}
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
+          <button
+            onClick={() => setShowAll(!showAll)}
+            className="text-primary hover:text-primary-hover font-bold text-lg transition cursor-pointer"
+          >
+            {showAll ? (
+              <span className="flex items-center gap-2">Show less reviews <span className="text-xl">↑</span></span>
+            ) : (
+              <span className="flex items-center gap-2">Show more reviews <span className="text-xl">↓</span></span>
+            )}
+          </button>
+          
+          <div className="h-6 w-px bg-gray-300 hidden sm:block"></div>
+
+          <a
+            href={REVIEWS_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 bg-gray-900 text-white px-6 py-3 rounded-xl font-bold hover:bg-black transition shadow-md"
+          >
+            View all 184+ Google Reviews
+            <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+          </a>
+
+          <a
+            href={`${REVIEWS_URL}&review=1`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-primary hover:text-primary-hover font-bold text-lg transition"
+          >
+            Write a Review
+          </a>
         </div>
       </div>
     </section>

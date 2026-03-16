@@ -24,7 +24,7 @@ export function PainPoints() {
             Tired of Unreliable Plumbers?
           </h2>
           <p className="text-xl text-gray-500 max-w-3xl mx-auto">
-            You're not alone. Here's what <span className="font-semibold text-gray-700">Keighley homeowners</span> say they hate about hiring plumbers:
+            You're not alone. Here's what <span className="font-semibold text-gray-700">Homeowners/customers</span> say they hate about hiring plumbers:
           </p>
         </div>
 

@@ -7,8 +7,8 @@ export default function Schema() {
     "url": "https://gastechplumbing.co.uk",
     "logo": "https://gastechplumbing.co.uk/logo.png",
     "image": "https://images.unsplash.com/photo-1754620906571-9ba64bd3ffb4",
-    "description": "Keighley’s trusted plumbing experts. Fast, reliable help for emergency plumbing, blocked drains, burst pipes, and hot water repairs across Keighley and nearby areas.",
-    "telephone": "1300205205",
+    "description": "Keighley’s trusted plumbing experts. Fast, reliable help for emergency plumbing, Landlord Gas Safety Certificates (CP12), blocked drains, burst pipes, and hot water repairs across Keighley and nearby areas.",
+    "telephone": "07598 088229",
     "priceRange": "££",
     "address": {
       "@type": "PostalAddress",

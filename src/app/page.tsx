@@ -1,4 +1,5 @@
 import { Navbar } from '@/components/layout/Navbar';
+import { AnnouncementBar } from '@/components/layout/AnnouncementBar';
 import { Footer } from '@/components/layout/Footer';
 import { Hero } from '@/components/sections/Hero';
 import { QuoteForm } from '@/components/sections/QuoteForm';
@@ -16,6 +17,7 @@ export default function Home() {
   return (
     <div className="size-full bg-white">
       <Schema />
+      <AnnouncementBar />
       <Navbar />
 
       <main>
@@ -39,7 +41,7 @@ export default function Home() {
 
               </h2>
               <p className="text-xl text-gray-600">
-                More than a plumber. A fast, reliable <b>Keighley plumbing service</b> you can trust.
+                More than a plumber. A fast, reliable <b>plumbing service</b> you can trust.
               </p>
             </div>
 
@@ -51,7 +53,7 @@ export default function Home() {
                   " Fixed pricing — no hidden plumbing fees",
                   " 15+ years professional plumbing experience",
                   "Full-year warranty on parts supplied",
-                  " Lifetime workmanship guarantee",
+                  "Workmanship guarantee",
                   "We clean up and leave your home spotless",
                   " 24/7 emergency plumbing service",
                   "Fully licensed, insured & certified plumbers",
@@ -69,9 +71,9 @@ export default function Home() {
                   Book Your FREE Quote
                   <span className="text-xl">→</span>
                 </a>
-                <a href="tel:1300205205" className="bg-white text-gray-900 hover:bg-gray-50 px-8 py-4 rounded-xl font-bold text-lg transition inline-flex items-center justify-center gap-2 border-2 border-gray-300">
+                <a href="tel:07598088229" className="bg-white text-gray-900 hover:bg-gray-50 px-8 py-4 rounded-xl font-bold text-lg transition inline-flex items-center justify-center gap-2 border-2 border-gray-300">
                   <Phone className="w-6 h-6" />
-                  Call 1300 205 205
+                  Call 07598 088229
                 </a>
               </div>
             </div>
@@ -105,8 +107,8 @@ export default function Home() {
               <div className="grid sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4">
                 {[
                   "Keighley ", "Utley", "Riddlesden", "Stockbridge", "Thwaites Brow",
-                  "Ingrow", "East Morton", "Cross Roads", "Haworth", "Oxenhope",
-                  "Oakworth", "Stanbury", "Steeton", "Silsden", "Kildwick",
+                  "Ingrow", "East Morton", "Cross Roads", "Yeadon", "Otley", "Menston", "Guiseley", "Horsforth", "Pudsey", "Leeds", "Haworth", "Oxenhope",
+                  "Oakworth", "Stanbury", "Steeton", "Cullingworth", "Harden", "Denholme", "Halifax", "Silsden", "Kildwick",
                   "Cononley", "Bingley", "Harden", "Shipley", "Saltaire",
                   "Baildon", "Ilkley", "Addingham", "Skipton"
                 ].map((suburb, index) => (

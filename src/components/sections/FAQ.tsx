@@ -20,6 +20,10 @@ const faqs = [
   {
     question: "Which areas do your plumbers service?",
     answer: " We provide plumbing services across <b>Keighley and nearby areas</b>, offering fast response for both emergency and scheduled plumbing work."
+  },
+  {
+    question: "Do you provide Landlord Gas Safety Certificates (CP12)?",
+    answer: "Yes, we are <b>Gas Safe registered</b> and provide full landlord gas safety inspections and CP12 certification to ensure your property remains legally compliant."
   }
 ];
 
@@ -55,7 +59,7 @@ export function FAQ() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="#quote" className="font-bold text-primary hover:text-primary-hover transition text-lg underline">Book your free quote </a>
             <span className="hidden sm:inline text-gray-300">|</span>
-            <a href="tel:1300205205" className="font-bold text-primary hover:text-primary-hover transition text-lg underline">Call us on 1300 205 205</a>
+            <a href="tel:07598088229" className="font-bold text-primary hover:text-primary-hover transition text-lg underline">Call us on 07598 088229</a>
           </div>
         </div>
       </div>

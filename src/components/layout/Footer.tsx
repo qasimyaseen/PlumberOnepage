@@ -33,11 +33,11 @@ export function Footer() {
               <li>Blocked Drain Repair</li>
               <li> Burst Pipe Repair
               </li>
-              <li> Hot Water System Repairs
-              </li>
-              <li> Bathroom & Kitchen Plumbing
-              </li>
-              <li>General Plumbing Services</li>
+              <li>Boiler Servicing & Repairs</li>
+              <li>Gas Safety Inspections (CP12)</li>
+              <li>Radiator Repairs & Power Flushing</li>
+              <li>Heating System Repairs</li>
+              <li>Bathroom & Kitchen Plumbing</li>
 
             </ul>
           </div>
@@ -49,7 +49,7 @@ export function Footer() {
             <ul className="space-y-3 text-gray-400">
               <li className="flex items-center gap-2">
                 <Phone className="w-4 h-4 text-primary" />
-                <a href="tel:1300205205" className="hover:text-primary transition font-bold">1300 205 205</a>
+                <a href="tel:07598088229" className="hover:text-primary transition font-bold">07598 088229</a>
               </li>
               <li className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 text-primary mt-1 flex-shrink-0" />

@@ -17,9 +17,9 @@ export function Navbar() {
             <a href="#process" className="text-gray-700 hover:text-primary transition font-medium">How It Works</a>
             <a href="#faq" className="text-gray-700 hover:text-primary transition font-medium">FAQ</a>
           </div>
-          <a href="tel:1300205205" className="bg-primary hover:bg-primary-hover text-white px-6 py-3 rounded-lg font-bold transition flex items-center gap-2 text-lg">
+          <a href="tel:07598088229" className="bg-primary hover:bg-primary-hover text-white px-6 py-3 rounded-lg font-bold transition flex items-center gap-2 text-lg">
             <Phone className="w-5 h-5" />
-            <span className="hidden sm:inline">1300 205 205</span>
+            <span className="hidden sm:inline">07598 088229</span>
             <span className="sm:hidden">Call Now</span>
           </a>
         </div>

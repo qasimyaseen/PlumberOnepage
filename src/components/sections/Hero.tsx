@@ -1,4 +1,4 @@
-import { Star, Shield, Clock, CheckCircle, Phone, AlertCircle } from 'lucide-react';
+import { Star, Shield, Clock, CheckCircle, Phone, AlertCircle, Flame } from 'lucide-react';
 import { ImageWithFallback } from '@/components/ui/ImageWithFallback';
 
 export function Hero({ children }: { children?: React.ReactNode }) {
@@ -16,9 +16,13 @@ export function Hero({ children }: { children?: React.ReactNode }) {
           <div className="space-y-6">
             {/* Trust Badges Above Headline */}
             <div className="flex flex-wrap gap-4 items-center">
+              <div className="flex items-center gap-2 bg-accent/20 backdrop-blur-sm px-4 py-2 rounded-full border border-accent">
+                <Flame className="w-5 h-5 text-accent animate-pulse" />
+                <span className="font-bold text-accent">Boiler Servicing from £69</span>
+              </div>
               <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">
                 <Star className="w-5 h-5 text-accent fill-accent" />
-                <span className="font-bold">4.9/5  Rated Plumbing Service</span>
+                <span className="font-bold">4.9/5 Plumbers and heating engineers</span>
               </div>
               <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">
                 <Shield className="w-5 h-5 text-primary" />
@@ -62,16 +66,16 @@ export function Hero({ children }: { children?: React.ReactNode }) {
                 Get Your Free Quote
                 <span className="text-2xl">→</span>
               </a>
-              <a href="tel:1300205205" className="bg-white text-gray-900 hover:bg-gray-100 px-8 py-5 rounded-xl font-bold text-xl transition inline-flex items-center justify-center gap-2 border-2 border-white">
+              <a href="tel:07598088229" className="bg-white text-gray-900 hover:bg-gray-100 px-8 py-5 rounded-xl font-bold text-xl transition inline-flex items-center justify-center gap-2 border-2 border-white">
                 <Phone className="w-6 h-6" />
-                1300 205 205
+                07598 088229
               </a>
             </div>
 
             {/* Scarcity/Urgency */}
             <div className="flex items-center gap-2 text-primary bg-white/10 backdrop-blur-sm px-4 py-3 rounded-lg">
               <AlertCircle className="w-5 h-5" />
-              <span className="font-semibold">Only 3 same-day bookings left this week</span>
+              <span className="font-semibold">Trusted Local plumbing and Heating experts</span>
             </div>
           </div>
 
