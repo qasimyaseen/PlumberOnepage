@@ -20,11 +20,11 @@ const galleryItems = [
     link: "#quote"
   },
   {
-    tagline: "PIPE REPAIR",
-    title: "Pipe Relining",
-    description: "Modern no-dig pipe relining for damaged underground plumbing lines.",
-    image: "/images/pipe-repair.jpg",
-    linktitle: "Fix My Pipes",
+    tagline: "GAS SERVICES",
+    title: "Gas Appliances Installation",
+    description: "Professional installation and servicing for gas hobs, cookers, and kitchen appliances.",
+    image: "/images/gas-hob.png",
+    linktitle: "Book Installation",
     link: "#quote"
   },
   {

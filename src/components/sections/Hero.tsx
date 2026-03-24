@@ -29,7 +29,7 @@ export function Hero({ children }: { children?: React.ReactNode }) {
               </div>
               <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">
                 <Star className="w-5 h-5 text-accent fill-accent flex-shrink-0" />
-                <span className="font-bold text-sm sm:text-base">5.0 Google Verified Review</span>
+                <span className="font-bold text-sm sm:text-base">5.0 Google Verified Reviews</span>
               </div>
               <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">
                 <Shield className="w-5 h-5 text-primary flex-shrink-0" />

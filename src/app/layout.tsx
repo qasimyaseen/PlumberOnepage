@@ -2,6 +2,8 @@ import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { WhatsAppButton } from "@/components/ui/WhatsAppButton";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -65,6 +67,8 @@ export default function RootLayout({
       <body className="font-sans antialiased selection:bg-[#435CFF]/30">
         {children}
         <WhatsAppButton />
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
